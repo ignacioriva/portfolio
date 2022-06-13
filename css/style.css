@@ -91,6 +91,7 @@ body {
 	border: none;
 	color: var(--text-color);
 	display: none;
+	
 }
 
 
@@ -416,6 +417,35 @@ body {
 
 	.main .header .container .nav-links {
 		display: none;
+	}
+
+	.main .header .container .nav-responsive {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		display: block;
+		width: 100%;
+/*		min-height: 100vh;
+*/		background: #3c3838f7;
+		z-index: 5;
+	}
+
+	.main .header .container .nav-responsive ul {
+		text-align: center;
+	}
+
+	.main .header .container .nav-responsive ul li {
+		display: block;
+		margin: 0 auto;
+		padding: 1.5rem;
+	}
+
+	.main .header .container .nav-responsive ul li a {
+		color: var(--back-color);
+	}
+
+	.main .header .container .nav-responsive ul i {
+		color: var(--back-color);
 	}
 
 	.main .header .container .btn-toggle {
