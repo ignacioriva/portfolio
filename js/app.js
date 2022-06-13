@@ -35,6 +35,31 @@ darkMode();
 
 
 
+function responsiveToggleMenu () {
+	const btnToggle = document.getElementById('btnToggle');
+	const nav = document.querySelector('.nav-links');
+	let i = true;
+	const btnBars = document.getElementById('barsToggle');
+
+	btnToggle.addEventListener("click", function () {
+		if (i == true) {
+			nav.classList.add("nav-responsive");
+			btnBars.classList.remove('fa-bars');
+			btnBars.classList.add('fa-xmark');
+			i = false;
+		} else  {
+			nav.classList.remove("nav-responsive");
+			btnBars.classList.remove('fa-xmark');
+			btnBars.classList.add('fa-bars');
+			i = true;
+		}
+	});
+}
+
+responsiveToggleMenu();
+
+
+
 
 
 	const sr = ScrollReveal({
