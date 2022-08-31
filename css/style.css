@@ -9,14 +9,14 @@
 
 
 :root {
-	--back-color: white;
-	--text-color: black;
+	--back-color: black;
+	--text-color: white;
 	--footer-color: #181717;
 }
 
 .darkMode {
-	--back-color: black;
-	--text-color: white;
+	--back-color: white;
+	--text-color: black;
 }
 
 #dark-mode {
@@ -154,7 +154,7 @@
 
 .section-2 {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 70vh;
 	padding-left: 8%;
 	padding-right: 8%;
 	background-color: var(--back-color);
@@ -162,34 +162,10 @@
 	overflow: hidden;
 }
 
-.section-2 .title-div {
-	width: 100%;
-	min-height: 13vh;
-	position: relative;
-}
-
-.section-2 .title-div .back-text {
-    font-size: 5rem;
-    letter-spacing: 1rem;
-    opacity: 0.1;
-    text-align: center;
-    color: var(--text-color);
-}
-
-.section-2 .title-div .text-view {
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1rem 0;
-    letter-spacing: 1px;
-    color: var(--text-color);
-}
 
 .section-2 .container {
 	width: 968px;
-	min-height: 87vh;
+	min-height: 60vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -208,9 +184,44 @@
 	width: 60%;
 }
 
-.section-2 .container .content-div h1,p,button {
+.section-2 .container .content-div h1,p {
 	color: var(--text-color)
 }
+
+.section-2 .container .content-div h1 {
+	font-size: 3rem;
+}
+
+.section-2 .container .content-div h3 {
+	color: red;
+	padding: 1rem 0;
+}
+
+.section-2 .container .content-div p {
+	text-align: justify;
+}
+
+.section-2 .container .content-div .socials-div {
+	width: 50%;
+	min-height: 5vh;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.section-2 .container .content-div .socials-div .btn {
+	background: none;
+	border: none;
+	color: var(--text-color);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.section-2 .container .content-div .socials-div .btn:hover {
+	transition: 0.7s;
+	color: red;
+}
+
 
 .section-3 {
 	width: 100%;
@@ -302,7 +313,7 @@
   .section-3 .container .div img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -342,7 +353,7 @@
   	}
 
   	.section-3 .container .div .info button i {
-  		padding-left: 0.5rem;
+  		padding-right: 0.5rem;
   	}
 
 
@@ -454,6 +465,12 @@
 	margin: 2rem 1rem;
 	display: inline-block;
 }
+
+.section-4 .container .content-div .social:hover {
+	transition: 1s;
+	color: yellow;
+}
+
 
 
 
@@ -567,6 +584,10 @@
 		width: 100%;
 	}
 
+	.section-2 .container .image-div {
+	width: 100%;
+	}
+
 	/* SECTION 3 */
 
 	.section-3 .container {
@@ -594,13 +615,9 @@
 
 }
 
-@media screen and (max-width: 425px) {
-	.main .section-1 .content-div h1 {
-		font-size: 1.8rem;
-	}
-}
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 425px) {
 	.main .section-1 .content-div h1 {
 		font-size: 1.6rem;
 	}
@@ -609,13 +626,16 @@
 		font-size: 0.9rem;
 	}
 
-	.section-2 .title-div .back-text {
-		font-size: 3rem;
+    .section-2 .container .content-div h1 {
+		font-size: 1.6rem;
 	}
 
-	.section-2 .title-div .text-view {
-		font-size: 1.5rem;
-		transform: translate(-50%, -65%);
+	.section-2 .container .content-div p {
+		font-size: 0.9rem;
+	}
+
+	.section-2 .container .content-div .socials-div {
+    	width: 60%;
 	}
 
 
@@ -653,3 +673,10 @@
 	}
 
 }
+
+@media screen and (max-width: 375px) {
+	.section-2 .container .content-div .socials-div {
+    	width: 80%;
+	}
+}
+
