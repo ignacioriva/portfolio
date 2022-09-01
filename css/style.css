@@ -175,7 +175,9 @@
 .section-2 .container .image-div {
 	width: 30%;
 	min-height: 50vh;
-	background: lightblue;
+	background: url('../images/logo2.png');
+	background-size: cover;
+	background-position: center;
 	border-radius: 5px;
 }
 
@@ -184,20 +186,18 @@
 	width: 60%;
 }
 
-.section-2 .container .content-div h1,p {
-	color: var(--text-color)
-}
-
 .section-2 .container .content-div h1 {
+	color: var(--text-color);
 	font-size: 3rem;
 }
 
 .section-2 .container .content-div h3 {
-	color: red;
+	color: #7334c7;
 	padding: 1rem 0;
 }
 
 .section-2 .container .content-div p {
+	color: var(--text-color);
 	text-align: justify;
 }
 
@@ -219,7 +219,7 @@
 
 .section-2 .container .content-div .socials-div .btn:hover {
 	transition: 0.7s;
-	color: red;
+	color: #7334c7;
 }
 
 
@@ -464,6 +464,7 @@
 	font-size: 1.5rem;
 	margin: 2rem 1rem;
 	display: inline-block;
+	color: var(--text-color);
 }
 
 .section-4 .container .content-div .social:hover {
